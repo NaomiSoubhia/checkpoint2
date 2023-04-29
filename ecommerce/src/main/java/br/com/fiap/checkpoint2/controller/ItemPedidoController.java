@@ -80,9 +80,9 @@ public class ItemPedidoController {
 		return result;
 	}
 
-	@DeleteMapping(value = "{id}")
-	public void delete(@PathVariable Long codigo_produto) {
-		itemPedidoRepository.deleteById(codigo_produto);		
+	@DeleteMapping(value = "{sequecia}")
+	public void delete(@PathVariable Long sequencia) {
+		itemPedidoRepository.deleteById(sequencia);		
 	}
 
 }

@@ -81,9 +81,11 @@ public class ProdutoController {
 		return result;
 	}
 
-	@DeleteMapping(value = "{id}")
+	@DeleteMapping(value = "{$codigo_produto}")
 	public void delete(@PathVariable Long codigo_produto) {
 		produtoRepository.deleteById(codigo_produto);		
 	}
+	
+
 
 }

@@ -78,7 +78,7 @@ public class ClienteController {
 		return result;
 	}
 
-	@DeleteMapping(value = "{id}")
+	@DeleteMapping(value = "{codigo_cliente}")
 	public void delete(@PathVariable Long codigo_cliente) {
 		clienteRepository.deleteById(codigo_cliente);		
 	}
